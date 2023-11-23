@@ -1,4 +1,12 @@
 module "namespace" {
   source  = "shuhreeezy/namespace/kubernetes"
-  version = "test"
+  name = "test"
+  labels = {
+    environment = "dev"
+  }
+  annotations = {
+    managed_by = "terraform"
+  }
 }
+
+```
